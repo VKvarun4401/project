@@ -1,0 +1,186 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Inter', sans-serif;
+}
+
+.header-section {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 40px 20px;
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+.card-body {
+    padding: 30px;
+    text-align: center;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-weight: 600;
+    color: #444;
+}
+
+/* Section Titles */
+.middle-section h1, .header h1 {
+    font-size: 3rem;
+    color: #333;
+    font-weight: 700;
+}
+
+.middle-section p {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+.timer .card-body {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Icon styles */
+.icon-style {
+    font-size: 4rem;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 50%;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-style:hover {
+    background-color: #0056b3;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Responsiveness */
+@media (max-width: 767px) {
+    .header-section h1 {
+        font-size: 2rem;
+    }
+
+    .header-section p {
+        font-size: 1rem;
+    }
+
+    .card {
+        width: 100% !important;
+    }
+
+    .middle-section .container {
+        padding: 0 10px;
+    }
+
+    .timer .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timer .col {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-section {
+        padding: 20px;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Styling for the Start Section */
+.start-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.start-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.start-section p {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+.start-section .btn {
+    padding: 15px 30px;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.start-section .btn:hover {
+    background-color: #0056b3;
+}
+
+.start-section .timer-box {
+    text-align: center;
+}
+
+.start-section .timer-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.start-section .timer-label {
+    font-size: 1rem;
+    color: #555;
+}
+
+@media (max-width: 767px) {
+    .start-section h1 {
+        font-size: 2rem;
+    }
+
+    .start-section .btn {
+        font-size: 1rem;
+    }
+
+    .start-section .timer-value {
+        font-size: 1.5rem;
+    }
+}
